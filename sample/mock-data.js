@@ -17,7 +17,7 @@ const exposures = {
         'mock-generator-1' : [
             {
                 "id": "006906f2-9592-11ec-b909-0242ac120002",
-                "recordedTime": "2016-08-29T09:12:33.000-05:00",
+                "recordedTime": new Date("2016-08-29T09:12:33.000-05:00"),
                 "kiloVolts": 60,
                 "milliAmps": 7,
                 "exposureTime": 120,
@@ -30,7 +30,7 @@ const exposures = {
             },
             {
                 "id": "ac0a2dfb-c04c-40cd-9342-d4189af41e3c",
-                "recordedTime": "2016-08-29T09:12:38.000-05:00",
+                "recordedTime": new Date("2016-08-29T09:12:38.000-05:00"),
                 "kiloVolts": 60,
                 "milliAmps": 7,
                 "exposureTime": 120,
@@ -43,7 +43,7 @@ const exposures = {
             },
             {
                 "id": "452f58ca-5063-47a9-8bbd-7d673bf95fd3",
-                "recordedTime": "2016-08-29T09:12:45.000-05:00",
+                "recordedTime": new Date("2016-08-29T09:12:45.000-05:00"),
                 "kiloVolts": 60,
                 "milliAmps": 7,
                 "exposureTime": 120,
@@ -56,7 +56,7 @@ const exposures = {
             },
             {
                 "id": "32478e74-94ba-4e86-a73e-51038b34970a",
-                "recordedTime": "2016-08-29T09:12:50.000-05:00",
+                "recordedTime": new Date("2016-08-29T09:12:50.000-05:00"),
                 "kiloVolts": 60,
                 "milliAmps": 7,
                 "exposureTime": 120,
@@ -69,7 +69,7 @@ const exposures = {
             },
             {
                 "id": "98f49122-2ecc-47e7-bfc4-bc01b7bb2e00",
-                "recordedTime": "2016-08-29T09:13:02.000-05:00",
+                "recordedTime": new Date("2016-08-29T09:13:02.000-05:00"),
                 "kiloVolts": 60,
                 "milliAmps": 7,
                 "exposureTime": 100,

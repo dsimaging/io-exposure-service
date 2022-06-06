@@ -9,7 +9,7 @@ info:
 
 
     A service that implements the Intraoral Exposure API manages one or more Intraoral X-ray Tube Generators. API calls associated with `generators` may be used to retrieve information about the Intraoral X-ray Tube generators that the service manages. API calls associated with `exposures` may be used to retrieve exposure data from a give generator.
-    
+
   version: "1.0"
   title: Intraoral Exposure API
   contact:
@@ -18,7 +18,7 @@ info:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
 
-security: 
+security:
   - ApiKeyAuth: []
 
 tags:
@@ -68,7 +68,7 @@ paths:
                 $ref: '#/components/schemas/Generator'
         '404':
           description: Generator not found
-  
+
   /generator/{id}/exposure:
     get:
       tags:
@@ -76,7 +76,7 @@ paths:
       summary: retrieve exposures
       operationId: getExposures
       description: |
-        Retrieves exposures from an Intraoral X-ray Tube Generator sorted in chronological order from the oldest exposure to the newest. The results can be paginated and filtered by using the optional query parameters.
+        Retrieves exposures from an Intraoral X-ray Tube Generator sorted in chronological order starting with the most recent exposure. The results can be paginated and filtered by using the optional query parameters.
       parameters:
         - name: id
           in: path

@@ -5,7 +5,8 @@ const morgan = require('morgan');
 
 // swagger support
 const swaggerUi = require('swagger-ui-express');
-const swaggerSpec = require('../api/intraoral-exposure-service-swagger.json');
+const yaml = require('yamljs')
+const swaggerSpec = yaml.load('../api/intraoral-exposure-service-swagger.yaml');
 
 // import our routes for the Exposure API
 const router = require('./routes');
